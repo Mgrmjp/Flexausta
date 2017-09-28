@@ -15,9 +15,12 @@ font-family: 'Contrail One', cursive;
 
 body {
     font-family: 'Harmattan', sans-serif;
-    max-width: 960px;
-    margin: auto;
     font-size: 1.1em;
+    background-color: #eff1ff;
+    display: grid;
+    grid-template-columns: 97%;
+    justify-content: center;
+    color: #111111; 
 }
 
 h1 {
@@ -35,18 +38,52 @@ h3 {
     font-size: 1.5em;
 }
 
+nav {
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
 ul {
     list-style-type: none;
     font-family: 'Kelly Slab', cursive;
-    font-size: 1.3em;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 li a {
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.1em;
 }
 
 a:visited { 
-    color: #3270ff;
+    color: #1153aa;
+}
+
+img {
+    max-width: 100%;
+    margin-top: 5%;
+}
+
+nav ul li a img {
+    margin: 0;
+    max-width: 25%;
+}
+
+main {
+    margin-bottom: 5%;
+}
+
+section {
+    margin-bottom: 5%;
+}
+
+footer {
+    background-color: #18257f;
+    padding: 2em;
+    color: #f9f9f9;
 }
