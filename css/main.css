@@ -1,0 +1,52 @@
+/* 
+
+So that you can use dem fonts.
+
+font-family: 'Kelly Slab', cursive;
+font-family: 'Harmattan', sans-serif;
+font-family: 'Contrail One', cursive;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Harmattan', sans-serif;
+    max-width: 960px;
+    margin: auto;
+    font-size: 1.1em;
+}
+
+h1 {
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.9em;
+}
+
+h2 {
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.7em;
+}
+
+h3 {
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.5em;
+}
+
+ul {
+    list-style-type: none;
+    font-family: 'Kelly Slab', cursive;
+    font-size: 1.3em;
+}
+
+li a {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+a:visited { 
+    color: #3270ff;
+}
