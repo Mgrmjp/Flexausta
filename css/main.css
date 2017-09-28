@@ -1,17 +1,10 @@
-/* 
-
-So that you can use dem fonts.
+/* Here the codes for the fonts.
 
 font-family: 'Kelly Slab', cursive;
 font-family: 'Harmattan', sans-serif;
 font-family: 'Contrail One', cursive;
 
 */
-
-* {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     font-family: 'Harmattan', sans-serif;
@@ -25,22 +18,28 @@ body {
 
 h1 {
     font-family: 'Kelly Slab', cursive;
-    font-size: 1.9em;
+    font-size: 2em;
 }
 
 h2 {
     font-family: 'Kelly Slab', cursive;
-    font-size: 1.7em;
+    font-size: 1.4em;
 }
 
 h3 {
     font-family: 'Kelly Slab', cursive;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 nav {
     margin-top: 8%;
     margin-bottom: 5%;
+    font-size: .7em;
+}
+
+nav ul li a img {
+    display: flex;
+    max-width: 60%;
 }
 
 ul {
@@ -48,8 +47,9 @@ ul {
     font-family: 'Kelly Slab', cursive;
     font-size: 2em;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
 li a {
@@ -69,11 +69,6 @@ img {
     margin-top: 5%;
 }
 
-nav ul li a img {
-    margin: 0;
-    max-width: 25%;
-}
-
 main {
     margin-bottom: 5%;
 }
@@ -86,4 +81,72 @@ footer {
     background-color: #18257f;
     padding: 2em;
     color: #f9f9f9;
+    font-size: 0.67em;
 }
+
+/* ------- Media queries ----------- */
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    header {
+        grid-column: span 2;
+        text-align: center;
+    }
+    
+    main {
+        grid-column: span 2;
+    }
+    
+    nav {
+        font-size: .8em;
+        grid-column: span 2;
+    }
+    
+    footer {
+        grid-column: 1 / -1;
+    }
+    
+    article {
+        justify-content: space-around;
+    }
+    
+    
+    
+}
+
+@media (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: 20% 20% 20%;
+        grid-gap: 0.7em;
+    }
+    
+    header {
+        grid-column: span 3;
+        text-align: center;
+
+    }
+    
+    aside {
+        grid-column: 1fr;
+    }
+    
+    nav {
+        font-size: .8em;
+        grid-column: span 3;
+    }
+    
+    footer {
+        grid-column: 1 / -1;
+    }
+    
+    
+    
+    
+}
+
+/* ------- Media queries end ------- */
